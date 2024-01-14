@@ -1,0 +1,252 @@
+* {
+  font-family: "Work Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.text-gray {
+  color: #727272;
+  font-size: 1rem;
+  /* text-align: center; */
+}
+.btn-primary {
+  margin-top: 20px;
+  color: #fff;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border-radius: 8px;
+  background-color: #ff900e;
+  border: none;
+  width: 180px;
+  height: 64px;
+  cursor: pointer;
+}
+
+/* header section */
+header {
+  background: rgba(255, 144, 14, 0.1);
+  padding: 50px 240px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav > ul {
+  display: flex;
+}
+
+nav li {
+  list-style: none;
+  margin-right: 30px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #424242;
+}
+
+/* banner-section */
+.h1 {
+  color: #131313;
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+  margin: auto;
+}
+.banner-section {
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 110px;
+}
+.banner-title {
+  padding-bottom: 20px;
+  max-width: 900px;
+}
+.banner-img {
+  width: 100%;
+  padding-top: 30px;
+}
+main {
+  max-width: 1440px;
+  margin: 80px auto;
+  padding-left: 60px;
+  
+}
+/* Feature-section */
+.feature-section {
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+  width: 100%;
+}
+.feature-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  width: 100%;
+}
+.feature-text {
+  align-items: center;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.h2 {
+  font-size: 3rem;
+}
+/* third-section */
+.third-section {
+  display: flex;
+  margin-top: 150px;
+  gap: 40px;
+}
+
+.h3 {
+  color: #131313;
+  font-size: 2.5rem;
+  font-weight: 700;
+  width: 468px;
+}
+.h4 {
+  padding-bottom: 30px;
+}
+.third-section .h3 {
+  border-left: 5px solid #ff900e;
+  padding-left: 20px;
+}
+.card {
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.third-section img {
+  height: 70%;
+  margin-left: 100px;
+}
+
+/* Facts-section */
+.facts-text {
+  margin-bottom: 100px;
+}
+.h5 {
+  color: #131313;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.facts-card {
+  display: flex;
+  justify-content: space-around;
+}
+.facts-card .card {
+  border-radius: 8px;
+  border: 1px solid #ff900e;
+  text-align: center;
+  padding: 30px;
+}
+.facts-card .card-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-top: 5px;
+}
+
+.facts-card .card-stats {
+  font-size: 2.5rem;
+  color: #424242;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* sponser section */
+.sponsors .text-gray {
+  text-align: center;
+  padding-top: 10px;
+}
+.sponsors .h5 {
+  padding-bottom: 10px;
+}
+.sponsors {
+  text-align: center;
+  margin-top: 180px;
+}
+
+.sponsors-img-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 40px;
+}
+
+.sponsors-img-container img {
+  width: 165px;
+}
+footer {
+    width: 80%;
+    height: 50px;
+  text-align: center;
+  border-radius: 8px;
+  background: #fff4e7;
+  margin-left: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+/* responsive */
+@media screen and (max-width: 567px) {
+  header {
+    padding: 20px;
+  }
+  nav,
+  .feature-section,
+  .third-section,
+  .facts-card,
+  .sponsors-img-container {
+    flex-direction: column;
+  }
+  .feature-images {
+    grid-template-columns: 1fr;
+  }
+  .feature-text {
+    padding: 10px;
+  }
+  .third-section img {
+    width: 80%;
+    margin-left: 0;
+  }
+  main {
+    padding: 0;
+  }
+  footer{
+    width: auto;
+    margin: 5px;
+  }
+}
+@media screen and (min-width: 567px) and (max-width: 992px) {
+  header {
+    padding: 20px;
+  }
+  .feature-section,
+  .third-section,
+  .facts-card,
+  .sponsors-img-container {
+    flex-direction: column;
+  }
+  .third-section img {
+    width: 90%;
+    margin-left: 0;
+  }
+  .feature-images {
+    grid-template-columns: 1fr;
+  }
+  footer{
+    width: auto;
+    margin: 15px;
+  }
+}
