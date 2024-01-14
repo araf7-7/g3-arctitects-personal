@@ -227,6 +227,12 @@ footer {
     width: auto;
     margin: 5px;
   }
+  .facts-text{
+    padding-left: 10px;
+  }
+  .h4{
+    padding-left: 15px;
+  }
 }
 @media screen and (min-width: 567px) and (max-width: 992px) {
   header {
